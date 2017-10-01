@@ -1,0 +1,6 @@
+ar.out:link_i.o link_c.o
+	gcc -o ar.out link_i.o link_c.o
+link_i.o:link_i.c link.h
+	gcc -c link_i.c
+link_c.o:link_c.c link.h
+	gcc -c link_c.c

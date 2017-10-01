@@ -1,0 +1,6 @@
+ar.out:arlist_c.o arlist_i.o
+	gcc -o ar.out arlist_c.o arlist_i.o
+arlist_c.o:arlist_c.c arlist.h
+	gcc -c arlist_c.c
+arlist_i.o:arlist_i.c arlist.h
+	gcc -c arlist_i.c

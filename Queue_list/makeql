@@ -1,0 +1,7 @@
+ql.out:q_i.o q_c.o
+	gcc -o ql.out q_i.o q_c.o
+q_i.o:q_i.c q.h
+	gcc -c q_i.c
+q_c.o:q_c.c q.h
+	gcc -c q_c.c
+
