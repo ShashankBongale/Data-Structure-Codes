@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
-typedef int ele_t;
+typedef char ele_t;
 struct stack
 {
  ele_t e;
@@ -30,7 +30,7 @@ scanf("%d",&ch);
 switch(ch)
 {
 case 1:printf("Enter element\n");
-       scanf("%d",&ele);
+       scanf("%c",&ele);
        push(f,ele);
        break;
 case 2:if(empty(f))
@@ -38,7 +38,7 @@ case 2:if(empty(f))
        else
        {
         pop(f,&ele1);
-        printf("%d\n",ele1);
+        printf("%c\n",ele1);
        }
        break;
 case 3:if(empty(f))
@@ -91,7 +91,7 @@ else
 {
  while(temp!=NULL)
  {
-  printf("%d\n",temp->e);
+  printf("%c\n",temp->e);
   temp=temp->next;
  }
 }
