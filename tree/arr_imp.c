@@ -47,9 +47,12 @@ case 1: printf("Enter element\n");
           break;
           }
          }
+         if(a[c].data!=data)
+         {
          a[c].info=1;
          a[c].data=data; //UPDATING NEW ELEMENT
          num++;
+	}
        }
        break;
 case 2:for(i=0;i<max;i++)         
