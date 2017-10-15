@@ -27,7 +27,7 @@ case 1: printf("Enter element\n");
         scanf("%d",&data);
         if(a[0].info==0)
         {
-         a[0].data=data;
+         a[0].data=data;    //INSERTING VERY FIRST ELEMENT
          a[0].info=1;
         }
         else
@@ -37,9 +37,9 @@ case 1: printf("Enter element\n");
 	 { if(a[c].data!=data)
            {
            if(data>a[c].data)
-            c=2*c+2;
+            c=2*c+2;            //RIGHT CHILD
            else if(data<a[c].data)
-	    c=2*c+1;
+	    c=2*c+1;           //LEFT CHILD
 	  }
          else
           {
@@ -48,7 +48,7 @@ case 1: printf("Enter element\n");
           }
          }
          a[c].info=1;
-         a[c].data=data;
+         a[c].data=data; //UPDATING NEW ELEMENT
          num++;
        }
        break;
