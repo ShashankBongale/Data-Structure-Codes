@@ -16,8 +16,8 @@ s=i;
 f=(s-1)/2;
 while(s>0 && ele>a[f])
 {
-a[s]=a[f];
-s=f;
+a[s]=a[f];//Father slides down to son element
+s=f;            //Back propogation.
 f=(s-1)/2;
 }
 a[s]=ele;
@@ -52,7 +52,7 @@ a[s]=ele;
 }
 if(n%2==0)
 {
-temp=a[1];
+temp=a[1];                         //When number of elements will be even the last pair is heapified which reverse the sorted order
 a[1]=a[2];
 a[2]=temp;
 }

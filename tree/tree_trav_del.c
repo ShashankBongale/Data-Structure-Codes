@@ -177,7 +177,7 @@ else
   else  
   q->left=p->right;
   free(p);
- }
+ }                                                  //If u want to delete a node containing twi children
  else if(p->right==NULL && p->left!=NULL)
  { 
   if(p->data>q->data)

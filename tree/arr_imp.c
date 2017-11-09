@@ -69,21 +69,4 @@ default:printf("Invalid option\n");
 }
 return 0;
 }
-/*
-void iot(node a[])
-{
-c=0;
-iot_r(c);
-}
-void iot(int c)
-{
-static int i=0;
-if(i!=max)
-{
-if(a[i].info!=0)
- printf("%d ",a[i].data);
-iot(c*2+1);
-iot(c*2+2);
-}
-}
-*/
+
